@@ -1,0 +1,221 @@
+unit testing
+integration testing
+system testing
+user acceptance testing
+====================================>
+
+System Testing:--->
+
+	=> System testing conduct by Blackbox testing team,
+	=> During this test tester verify external functionality 
+	   of software.
+
+
+System Testing is categorized into two types.
+	1. Functional testing     [How software is working]
+	2. Non functional testing [how Software is performing]
+
+
+Functional testing:-->
+	=> During this testing, Test-Engineer verify core 
+		requirements of client at user interface.
+	
+	=> Checking customer expectation is fulfilled
+	   at end user level.
+
+	=> End user level testing..
+
+		1.Behavioural /GUI testing 
+		2.Input testing
+		3.Output testing
+		4.Error handling
+		5.DB-Testing [Backend testing]
+		6.Links coverage
+
+
+	1. Behavioral testing:-->
+		During this test Test-Engineer verify availability of each screen
+			and each screen response to End user.
+			
+		What Exactly tester verify here?
+			=> launching software pages and responses..
+
+
+
+
+	Graphical User Interface Testing [GUI]
+
+		During this test Test-Engineer verify look and feel of software
+			from front page..
+		
+		=> Verify font sizes
+		=> Verify color,Background color of elements
+		=> Verify page alignments  [Margins, Padding ---etc.]
+		=> Verify images at page
+		=> Verify cursor position
+		=> verify cursor types
+		=> Verify All Menu tabs
+		=> Login forms and registration forms alignment
+		=> Highlighters and active tabs
+
+	2.Input-Domain Testing:-->
+		During this testing Test-Engineer verify whether software is accepting
+		valid inputs from end-user.
+		
+		=> Verify user can enter text into edit box
+		=> Verify user can select input from Dropdown
+		=> Verify user can select radio buttons
+		=> Verify user can select checkboxes
+		=> Verify user can use mouse and keyboard inputs at software.
+		=> Verify user can select option from list box
+		=> Verify user can select date from date picker
+		=> Verify user can select multiple options from list boxes [Optional]
+		=> Verify user can operate software using touch actions
+		=> Verify user able to click buttons, links, selection items
+		=> Verify user able to access sub categories by hovering on Main 
+		categories
+		
+	3.Output-Domain Testing:-->
+
+		During this testing Test Engineer operate software 
+		using valid credentials/inputs to verify 
+		correctness of output.
+
+		=> Typed characters visible at edit box
+		=> All radio buttons and checkboxes generating rules as expected
+		=> verify Selected dropdown option populated
+		=> Selected date visible at calendar.
+		=> Verify status messages displayed at webpage after operated 	
+		   software with valid data.
+		=> Verify Expected image/object/text available at webpage.
+		=> Verify object visible and hidden  behavior according to input entry
+		=> verify object enable and disable behavior according to input entry
+		=> Verify checkbox and  radio button status after selection and deselection
+		=> Verify expected popup messages display to convey status messages
+		=> Verify expected data records are showing at web tables.
+		=> verify child feature displayed after parent entry successful
+
+               4. Error handling:-->
+
+		During this testing Test Engineer operate software 
+		with invalid inputs to verify software is
+		preventing those actions and display appropriate
+		error messages to end-user.
+
+
+		=> Verify appropriate error message displayed on invalid data
+		=> Verify popup message displayed on incorrect operations
+		=> Verify info message displayed when order missing
+		=> Verify error message displayed when Field leavy empty but it 
+		   expected as mandatory field
+		=> Verify table records show "Records not available" when user try empty search 
+					or by missing required records
+		=> Verify input entry at edit box when text box is in readable mode
+		=> verify user actions on disable element
+		=> verify click functionality of button  or link when object is inactive
+
+
+	   5. Illegal handling:-->
+		During this testing test engineer purposely hack software with illegal
+		approach and verify whether software is preventing user to access.
+
+
+		=> To many invalid attempts to access password
+		=> Guessing passwords
+		=> Bookmark a page after successful login..
+		=> verify page not allowed user to access page source
+		=> verify user able to take screenshot of page when it is not allowed
+		=> Handle captcha using automation tools
+		=> Copying encrypted password
+
+	5. DB-testing:-->
+		=> Also known as backend testing
+
+
+	1. Data mapping:-->
+
+	=> Also called as data validity
+	=> Checking connection of new database tables and forms.
+
+		verify that respective tables and records are 
+		updated when the user clicks  Save ,  Update , 
+		 Search  or  Delete  from GUI of the application.
+
+
+	2. Data integrity:--->
+
+		Consider that different modules (i.e. screens or forms) of 	
+		application use the same data. In that case, 
+		make it sure that the latest state of data is reflected 
+		everywhere..
+
+
+		Note:-->
+		SIT-[System Integration Testing]
+		System integrity or End to End System Integration testing
+		done by functional testing team at user interface 
+		of software
+		
+	5.LinksCoverage:--->
+	
+		Links play key role in web applications. To test links at webpage
+		follow below checklist.
+
+	=> Verify if any broken images and links at webpage
+	=> Verify administrator links opening third party tools.
+	=> Verify all external links open page at private window.
+	=> Verify all hyperlinks connect intersystem softwares..
+	=> Verify secure pages opening in incognito window.
+========================================================================
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
