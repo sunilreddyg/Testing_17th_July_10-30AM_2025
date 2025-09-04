@@ -8,7 +8,7 @@ public class SampleRun
 	public static void main(String[] args) 
 	{
 		System.out.println("HelloFriends");
-		System.out.println("Hello world");
+		System.out.println("Helloworld");
 	}
 	
 	/*
