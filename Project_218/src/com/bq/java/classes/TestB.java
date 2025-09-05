@@ -1,4 +1,4 @@
-package com.bq.java.core.classes;
+package com.bq.java.classes;
 
 class TestB
 {
