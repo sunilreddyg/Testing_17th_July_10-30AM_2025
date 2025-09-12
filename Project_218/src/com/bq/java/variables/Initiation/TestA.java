@@ -2,7 +2,7 @@ package com.bq.java.variables.Initiation;
 
 public class TestA 
 {
-	//Declaration
+	//Declaration of variable
 	int a;
 	int b;
 	int c;
