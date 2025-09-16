@@ -1,6 +1,5 @@
 package com.bq.java.methodparameters;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class CallByReference 
@@ -24,10 +23,9 @@ public class CallByReference
 		CallByReference obj=new CallByReference();
 		obj.print("12:08");
 		
-		
-		Date date=new Date();
-		obj.getCurrentSystemDate(date);
+		//Calling with class argument
 		obj.getCurrentSystemDate(new Date());
+		
 		
 		
 
