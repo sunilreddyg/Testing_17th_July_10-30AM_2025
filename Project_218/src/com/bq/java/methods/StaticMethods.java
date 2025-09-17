@@ -29,6 +29,8 @@ public class StaticMethods
 		StaticMethods.methodA();
 		StaticMethods.methodB();
 		
+		
+		
 	}
 
 }

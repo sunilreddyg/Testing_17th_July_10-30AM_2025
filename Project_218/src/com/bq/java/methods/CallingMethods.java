@@ -15,7 +15,7 @@ public class CallingMethods
 	}
 	
 	//Instant method
-	public void methodC()
+	void methodC()
 	{
 		//Calling instant methods with in class
 		methodA();
