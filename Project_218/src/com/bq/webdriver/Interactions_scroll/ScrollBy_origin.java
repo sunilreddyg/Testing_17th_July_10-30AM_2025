@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.WheelInput;
 
 public class ScrollBy_origin {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
 	   WebDriver driver=new ChromeDriver();
 	   driver.get("https://www.amazon.in");
@@ -20,7 +20,9 @@ public class ScrollBy_origin {
 	   
 		  
 	    WebElement BackToTop=driver.findElement(By.xpath("//span[contains(.,'Back to top')]"));
-
+	    new Actions(driver).scrollToElement(BackToTop).perform();
+	    Thread.sleep(5000);
+	    
 		WheelInput.ScrollOrigin scrollOrigin = WheelInput.ScrollOrigin.fromElement(BackToTop);
 		new Actions(driver).scrollFromOrigin(scrollOrigin, 0, 100).perform();
 		   

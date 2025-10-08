@@ -19,12 +19,13 @@ public class Scroll_To_Element {
 		   
 		  
 		   WebElement BackToTop=driver.findElement(By.xpath("//span[contains(.,'Back to top')]"));
-		  new Actions(driver).scrollToElement(BackToTop).perform();
+		   new Actions(driver).scrollToElement(BackToTop).perform();
 		   
-		   Thread.sleep(5000);
-		   WebElement SignInBtn=driver.findElement(By.xpath("(//span[contains(.,'Sign in')])[9]"));
-		   SignInBtn.click();
-		   
+			/*
+			 * Thread.sleep(5000); WebElement
+			 * SignInBtn=driver.findElement(By.xpath("(//span[contains(.,'Sign in')])[9]"));
+			 * SignInBtn.click();
+			 */
 		   //By default scroll object to downside of the page
 
 	}

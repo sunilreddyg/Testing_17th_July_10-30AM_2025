@@ -19,12 +19,14 @@ public class ScrollByAmmount {
 	   
 	  
 	   WebElement BackToTop=driver.findElement(By.xpath("//span[contains(.,'Back to top')]"));
-	   int ObjY=BackToTop.getRect().getY();  //Reading object y coordinates at webpage
 	   
-	   new Actions(driver).scrollByAmount(0, ObjY).perform();
+	   //Get Object y coordinates
+	   int Obj_y=BackToTop.getLocation().getY();
+	   
+	   
 	   //scrollByAmount:--> Scroll page until object get to view port.But your required object
 	   //will be presented top side of webpage
-	   
+	   new Actions(driver).scrollByAmount(0, Obj_y).perform();
 	   
 	   /*
 	    * deltax :--> Scroll your page left to right
