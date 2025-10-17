@@ -81,6 +81,7 @@
 	<classpathentry kind="lib" path="E:/Selenium_03_09_2025/selenium libraries/selenium-support-4.35.0.jar"/>
 	<classpathentry kind="lib" path="E:/Selenium_03_09_2025/selenium libraries/selenium-support-4.35.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/ashot-1.5.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/HP/Downloads/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="E:/selenium dump/support_Libraries/ashot-1.5.4.jar"/>
+	<classpathentry kind="lib" path="E:/selenium dump/support_Libraries/commons-io-2.20.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
