@@ -7,7 +7,9 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class Repository 
 {
@@ -60,6 +62,43 @@ public class Repository
 	
 	 }
 	 
+	 
+	 //To Verify Expected page title preseted
+	 public boolean VerifyPageTitle(String exptitle)
+	 {
+		 boolean flag=driver.getTitle().contains(exptitle);
+		 return flag;
+	 }
+	 
+	 
+	//To Verify Expected page url preseted
+	 public boolean VerifyPageUrl(String expurl)
+	 {
+		 boolean flag=driver.getCurrentUrl().contains(expurl);
+		 return flag;
+	 }
+	 
+	 
+	//To Verify Expected page url preseted
+	 public boolean VerifyElemntAtsource(String ExpElement)
+	 {
+		 boolean flag=driver.getPageSource().contains(ExpElement);
+		 return flag;
+	 }
+	 
+	 
+	 //To Verify Any Element presnted at DOM [Document Object Model]
+	 public boolean VerifyElementPresentedAtDOM(By loc)
+	 {
+		 boolean flag=false;
+		 try {
+			driver.findElement(loc);   //Error code
+			flag=true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		 return flag;
+	 }
 	 
 	 
 	 
