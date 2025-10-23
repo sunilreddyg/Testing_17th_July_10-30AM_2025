@@ -8,18 +8,19 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.bq.webdriver.ScreenCapture.ScreenRepository;
+
 
 class BeforeEach_And_AfterEach 
 {
 	WebDriver driver=null;
-	String url="http://google.com";
+	
 	
 	@BeforeEach //Invoke every test before
 	void setUp() throws Exception 
 	{
 		try {
 			driver=new ChromeDriver();
-			driver.get(url);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -28,15 +29,30 @@ class BeforeEach_And_AfterEach
 	@AfterEach
 	void tearDown() throws Exception 
 	{
+		ScreenRepository srep=new ScreenRepository(driver);
+		srep.capturescreenWithTime("scrn");
 		Thread.sleep(5000);
 		driver.quit();
 	}
 
+	
+	String googleurl="http://google.com";
 	@Test
-	void verifypagetitle() 
+	void verifygoogle() 
 	{
+		driver.get(googleurl);
 		Assert.assertEquals(driver.getTitle(), "Google");
-		System.out.println("Title is Verified");
+		System.out.println("Google Page Title Verified");
 	}
+	
+	String urlfb="http://facebook.com";
+	@Test
+	void verifyfb() 
+	{
+		driver.get(urlfb);
+		Assert.assertEquals("Facebook – log in or sign up", driver.getTitle());
+		System.out.println("Fb title verified");
+	}
+
 
 }
