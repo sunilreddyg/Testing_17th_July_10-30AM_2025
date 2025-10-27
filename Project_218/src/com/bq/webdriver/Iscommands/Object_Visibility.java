@@ -1,15 +1,14 @@
 package com.bq.webdriver.Iscommands;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.time.Duration;
-
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 class Object_Visibility 
@@ -34,7 +33,8 @@ class Object_Visibility
 	
 	By Loc_resume=By.xpath("//button[.='Upload Resume']");
 	By Loc_exp=By.xpath("//div[@data-val='exp']");
-	@Test
+	
+	//@Test
 	public void CheckObjectVisibltAtWebpage() throws Exception
 	{
 		driver.get("https://www.naukri.com/registration/createAccount?");
@@ -50,6 +50,26 @@ class Object_Visibility
 		
 		Assert.assertTrue(flag);
 		System.out.println("Element Visible  at webpage");
+	}
+	
+	
+	
+	@Test  //Alternative command to Check Object visibility
+	public void CheckVisibility() throws Exception
+	{
+		driver.get("https://www.naukri.com/registration/createAccount?");
+		driver.findElement(Loc_exp).click();
+		Thread.sleep(4000);
+		
+		WebElement obj=driver.findElement(Loc_resume);
+		if(obj.getLocation().getX() > 0)
+		{
+			System.out.println("Object is visible at webpage");
+		}
+		else
+		{
+			System.out.println("Object not visible at webpage");
+		}
 	}
 
 }

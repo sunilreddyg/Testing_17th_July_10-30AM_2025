@@ -83,5 +83,7 @@
 	<classpathentry kind="lib" path="C:/Users/HP/Downloads/ashot-1.5.4.jar"/>
 	<classpathentry kind="lib" path="E:/selenium dump/support_Libraries/ashot-1.5.4.jar"/>
 	<classpathentry kind="lib" path="E:/selenium dump/support_Libraries/commons-io-2.20.0.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium_03_09_2025/selenium support libraries/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="E:/Selenium_03_09_2025/selenium support libraries/freemarker-2.3.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

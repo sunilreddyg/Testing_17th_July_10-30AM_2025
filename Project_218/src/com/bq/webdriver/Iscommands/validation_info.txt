@@ -42,6 +42,16 @@ User interface validation commands:-->
 					boolean flag=Element.IsEnabled();
 					System.out.println("Element Enabled "+flag);
 					
+					
+			=> Don't apply this command when your object disabled
+				with class property
+				
+					<input id="email" class="disabled">
+				How do i work when object disabled with class?
+				
+				String Run_val=driver.findElement(By.id("email")).getAttribute("class");
+				if(Run_val.contains("disabled"))
+					System.out.print("Object is disabled");	
 		
 =====================================================================							
 =>IsSelected:-->			
