@@ -1,0 +1,41 @@
+
+
+	Variable:-->  To Single unit memory
+	
+	
+			int a=10;
+			a=20;
+			
+	Arrays:--> Array store group of similar values..
+	
+			StaticArray
+			DyamicArray
+			
+			[
+				Single Dimensional,
+				Double Dimensional, 
+				Multiple Dimenstional
+			]
+			
+			
+		Array Declaration:-->
+				String name[];
+				String []fname;
+				
+		StaticArray:-->  [Fixed boundaries]
+		
+				String arr[]=new String[3];
+				arr[0]="apple";
+				arr[1]="samsung";
+				arr[2]="vivo";
+				
+				System.out.println(arr);
+				
+				Integer int[]=new Integer[3];
+				int[0]=100;
+				int[1]=200;
+				int[2]=300;
+				
+			
+			
+		
