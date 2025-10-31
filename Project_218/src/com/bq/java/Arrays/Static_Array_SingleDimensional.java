@@ -5,6 +5,8 @@ public class Static_Array_SingleDimensional {
 	public static void main(String[] args) {
 		
 		
+		
+		
 		//String array
 		String arr[]=new String[3];
 		arr[0]="apple";
@@ -12,6 +14,7 @@ public class Static_Array_SingleDimensional {
 		arr[2]="vivo";
 		
 		System.out.println(arr[1]);
+		System.out.println("array length is--> "+arr.length);
 		
 		//Integer array
 		Integer num[]=new Integer[3];
