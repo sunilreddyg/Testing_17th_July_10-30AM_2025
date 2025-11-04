@@ -1,16 +1,14 @@
 package com.bq.java.Collections;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
-public class Set_HashSet {
+public class Set_TreeSet {
 
 	public static void main(String[] args) {
 		
-		//Unoder collection of objects
-		//No Duplication allowed
-		Set<String> set=new HashSet<String>();
+		Set<String> set=new TreeSet<String>();
 		set.add("one");
 		set.add("two");
 		set.add("three");
@@ -19,9 +17,7 @@ public class Set_HashSet {
 		set.add("six");
 		set.add("seven");
 		set.add("eight");
-		set.add("six");
-		
-		
+
 		//Remove object from collection
 		set.remove("four");
 	
@@ -68,8 +64,6 @@ public class Set_HashSet {
 			String string = (String) iterator2.next();
 			System.out.println("$"+string);
 		}
-		
-		
 		
 		
 

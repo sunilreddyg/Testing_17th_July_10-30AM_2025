@@ -101,6 +101,14 @@ public class Repository
 	 }
 	 
 	 
-	 
+	 //Reading data form Specific row and cell
+	 public String ReadTableData(By tablepath,int row, int cell)
+	 {
+		 WebElement Table=driver.findElement(tablepath);
+		 return Table.findElements(By.tagName("tr")).get(row)  //row
+					 .findElements(By.tagName("td")).get(cell)  //cell
+					 .getText();
+					
+	 }
 	 
 }
