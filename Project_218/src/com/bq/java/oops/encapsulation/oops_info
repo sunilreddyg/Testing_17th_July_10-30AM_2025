@@ -1,0 +1,27 @@
+Object-Oriented Programming (OOP) is a programming 
+paradigm that uses objects and classes to structure 
+code in a more modular, reusable, and maintainable way.
+
+
+
+The main OOP concepts in Java are 
+	Encapsulation, 
+	Inheritance, 
+	Polymorphism, 
+	Abstraction, 
+	Classes, and Objects
+	
+	
+	Encapsulation:-->
+	Encapsulation is the practice of restricting 
+	access to certain fields and methods using 
+	access modifiers (private, public, protected), 
+	and providing getter/setter methods to access 
+	private data...
+	
+	
+	
+	
+	
+	
+	
