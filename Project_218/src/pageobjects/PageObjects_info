@@ -1,0 +1,13 @@
+Page Object Model (POM) in Selenium
+
+The Page Object Model (POM) is a design pattern 
+commonly used in test automation to create an 
+object repository for web UI elements. 
+
+This model helps in reducing code duplication and
+ improving test maintenance. In POM, 
+ each web page in the application is represented
+ by a corresponding Page Class. 
+ This Page Class identifies the web elements 
+ of that web page and contains methods to perform
+ operations on these elements.

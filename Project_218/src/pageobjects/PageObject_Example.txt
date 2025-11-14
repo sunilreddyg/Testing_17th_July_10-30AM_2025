@@ -1,0 +1,52 @@
+
+public class Home
+{
+	Webdriver driver;
+	public Home(Webdriver driver)
+	{
+		this.driver=driver;
+	}
+	private By loginhere=By.xpath("Login");
+
+	public void clickloginhere()
+	{
+		driver.findElement(loginhere).click();
+	}
+}
+
+
+public class TestHome
+{
+
+	Webdriver driver;
+	Home home;
+	public TestHome(Webdriver driver)
+	{
+		this.driver=driver;
+		home=new Home(driver);
+	}
+
+	public void TestLoginButton()
+	{
+		home.clickloginhere();
+	}
+}
+
+
+public class FinalRun
+{	
+	TestHome testhome; 
+
+	
+	
+	@Test
+	public void RunLoginButtonTest()
+	{
+		Webdriver driver=new ChromeDriver();
+		driver.get("http://webpage.index.html");
+
+		testhome=new TestHome(driver);
+		testhome.TestLoginButton();
+	}
+
+}
