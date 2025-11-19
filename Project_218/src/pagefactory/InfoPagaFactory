@@ -1,0 +1,13 @@
+Page Factory is a design pattern in Selenium 
+that simplifies the implementation of the 
+Page Object Model (POM). 
+
+It provides an efficient way to initialize 
+web elements and reduces boilerplate code by 
+using annotations. 
+
+This approach enhances code readability, 
+maintainability, and reusability in 
+test automation.
+
+
