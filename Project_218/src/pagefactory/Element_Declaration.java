@@ -34,7 +34,7 @@ public class Element_Declaration
 	({
 		@FindBy(tagName="select"),       //wrong tagname 
 		@FindBy(tagName="input"),
-		@FindBy(className="_8esa "),
+		@FindBy(className="a"),
 	}) List<WebElement> Bys_Group_Objects;
 	
 	
@@ -48,7 +48,7 @@ public class Element_Declaration
 	({
 		@FindBy(tagName="select"),    		//wrong tagname
 		@FindBy(tagName="input"),
-		@FindBy(className="_8esa "),
+		@FindBy(className="a"),
 	}) List<WebElement> Group_objects;
 	
 	
